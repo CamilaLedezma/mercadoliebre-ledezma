@@ -1,0 +1,335 @@
+*{
+        margin: 0px;
+        padding: 0px;    
+        box-sizing: border-box;
+}
+header{
+    background-color: #EAC926;
+}
+header .header{
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+header .header .logo{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+header .header form{
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 5px;
+    height: 24px;
+}
+header .header form input{
+    color: #666;
+    margin:0px 2px;
+}
+header .header .buscar .text-buscar{
+    width: 80%;
+    font-size: 16px;
+}
+header .header .buscar i{
+    font-size: 16px;
+    color: #666;
+    background-color: #FFF;
+}
+header .header .buscar .icon-buscar{
+    border: 0px;
+}
+header .header .buscar{
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header .header .cuotas{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+nav{
+    padding: 10px;
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+    align-items: center;
+}
+.burger-menu i{
+    padding: 10px;
+    color: #FFF;
+    font-size: 20px;
+    background-color: #03264C;
+    width: 36px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+}
+.banner img{
+    width: 100%;
+}
+body{
+    background-color: #ebebeb;
+    font-family: Roboto;
+    color:#666;
+}
+main{
+    margin:0 auto ;
+    width: 90%;
+}
+main section{
+    padding: 10px 0px;
+}
+main section article{
+    margin: 10px 0px;
+    background-color: #FFF;
+}    
+main section article .producto{
+    border-top: solid 1px #ebebeb;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding:15px;
+    position: relative;
+}
+main section article .imagen-producto{
+    width: 100%;
+    height: auto;
+}
+main section article .producto .descripcion{
+    opacity: 0%;
+    font-family: Roboto;
+    color: #666;
+    padding-top:15px ;
+    
+}
+main section article .producto .precio{
+    color:#666;
+    font-size: 18px;
+    width: 30%;
+}
+main section article .producto i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main section article .producto .descuento{
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
+}
+footer{
+    padding:20px 10px;
+    background-color: #FFF;
+}
+footer section article{
+    margin: 0px 45px
+}
+footer section article i{
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom:10px ;
+
+}
+footer section article{
+    text-align: center;
+    font-family: Roboto;
+    color: #666;
+    font-size: 16px;
+}
+
+footer article .Copyright{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+    padding: 10px;
+}
+input{
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    height: 20px;
+}
+main.registro , main.login{
+    padding: 30px 0px;
+}
+
+main.registro div, main.login div{
+    padding: 10px 5px;
+}
+main.registro form  .nombre-apellido input , .nombre-usuario input, .email input, .fecha-nac input, .domicilio input,.foto-user input, .contrasenia input, .confirm-contrasenia input{
+    width: 100%;
+    height: 30px;
+    
+}
+main.registro form .intereses, .tipo-user{
+    display: flex;
+    flex-direction: column;
+}
+main.registro form .intereses div, .tipo-user div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+main.registro form .registrar, .cancelar, main.login form .ingresar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+main.registro form button, main.login form button{
+    width: 50%;
+    border: none;
+    background-color: #03264C;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    color:#FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 450ms;
+}
+main.registro form button:hover, main.login form button:hover{
+    background-color: #39b54a;
+}
+main.registro form button:active, main.login form button:active{
+    background-color: #FFF;
+    border: 1px solid #39b54a ;
+    color: #39b54a;
+}
+@media(min-width:361px) {
+    header .burger-menu{
+        display: none;
+    }
+    header .header{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    header .header .logo , .buscar , .cuotas{
+        width: 100%;
+        align-self: center;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 10px 0px 20px 0px;
+    }
+    nav ul li{
+        padding: 0px 5px;
+        list-style-type: none;
+        display:flex;
+        flex-grow: 1;
+        align-self: center;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #03264C;
+        font-size: 12px;
+        text-align: center;
+    }
+    main section .productos-muestra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section .productos-muestra article{
+        width: 45%;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition-duration: 450ms;
+    }
+    main section article:hover i {
+        transform: rotate(-90deg);
+        transition-duration: 450ms;
+    }
+    main section article .descripcion{
+        display: block;
+        opacity: 0%;
+        transition: opacity 450ms;
+    }
+    main section article:hover .descripcion{
+        opacity: 100%;
+        transition-duration: 450ms;
+    }
+    .price,
+    .discount{
+        width: 50%;
+    }
+    main.registro form .intereses, .tipo-user{
+        display: flex;
+        flex-direction:row;
+    }
+    main.registro form .intereses div, .tipo-user div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0px 5px;
+    }
+}
+@media(min-width:769px) {
+    header nav{
+        display: flex;
+    }
+    .header .cuotas p{
+        font-size: 14px;
+    }
+    nav ul li{
+        padding: 0px 10px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    main section .productos-muestra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section .productos-muestra article{
+        width: 22%;
+    }
+    footer section{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    footer section article i:hover{
+        color: #39b54a;
+        transition-duration: 450ms;
+    }
+    main.registro form .intereses div, .tipo-user div{
+        padding: 0px 15px;
+        justify-content: space-around;
+    }
+}
